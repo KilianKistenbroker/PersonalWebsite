@@ -1,0 +1,26 @@
+
+{
+    "moving_up_photos": [
+        {
+            "id": 1,
+            "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_title_scene.jpg",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_title_scene.jpg",
+            "title": "Title Scene (WIP)",
+            "type" : "photo"
+        },
+        {
+            "id": 2,
+            "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_home_scene.png",
+            "title": "Home Scene (WIP)",
+            "type" : "photo"
+        },
+        {
+            "id": 3,
+            "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_level_1.png",
+            "title": "Level 1 (WIP)",
+            "type" : "photo"
+        }
+    ]
+    
+    
+}
