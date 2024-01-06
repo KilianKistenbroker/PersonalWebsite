@@ -83,12 +83,24 @@ const StudentSources = () => {
 
       <div className="project-details-grid">
         <div className="project-detail">
-          <div className="header-1">Summary</div>
+          <div className="header-1">Overview</div>
           <div className="paragraph-1">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
             maxime delectus placeat in doloribus quae harum, expedita,
             reprehenderit odio inventore officia veritatis est sapiente,
             consectetur necessitatibus a qui quam voluptas!
+          </div>
+        </div>
+        <div className="project-detail">
+          <div className="header-1">Role</div>
+          <div className="indents">
+            <div className="subheader-1">Frontend Lead</div>
+            <div className="indents">
+              <div className="paragraph-1">
+                UI/UX development, wireframing, vertical-prototyping,
+                programming, quality assurance and testing.
+              </div>
+            </div>
           </div>
         </div>
         <div className="project-detail">

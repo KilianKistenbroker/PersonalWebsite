@@ -101,6 +101,7 @@ code {
   border-radius: 2px;
   background-color: white;
   padding: 10px;
+  padding-top: 20px;
 }
 
 .collapsed {
@@ -230,14 +231,14 @@ display: grid;
 
 .header-1 {
   padding-top: 30px;
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: xx-large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-weight: bold; */
   color: #202020;
 }
 
 .paragraph-1 {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: medium;
   font-family: Arial, Helvetica, sans-serif;
   color: dimgray;
@@ -247,14 +248,14 @@ display: grid;
 
 .header-2 {
   padding-top: 10px;
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size:xx-large;
+  /* font-weight: bold; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .indents {
-  padding-top: 5px;
+  /* padding-top: 5px; */
   padding-left: 20px;
 }
 
@@ -268,7 +269,7 @@ display: grid;
 .subheader-1 {
   padding-top: 20px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: large;
 }
 
@@ -279,6 +280,24 @@ display: grid;
 
 }
 
-.footer {
-  height: 50px;
+/* ------------------ FOOTER ------------------- */
+
+.App {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+#footer {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #202020;
+  color: whitesmoke;
+  margin-top: auto;
+}
+#footer-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }

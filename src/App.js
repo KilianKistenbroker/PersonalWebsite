@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="App">
       <Router>
         <Navbar
           selectedPage={selectedPage}
@@ -42,7 +42,33 @@ function App() {
       </Router>
 
       {/* footer */}
-      <div className="footer"></div>
+      <div id="footer">
+        <div id="footer-content">
+          Copyright © 2024
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-dot"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>
+          Kilian Kistenbroker
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-dot"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>
+          All Rights Reserved
+        </div>
+      </div>
     </div>
   );
 }

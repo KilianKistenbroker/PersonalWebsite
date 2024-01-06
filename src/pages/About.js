@@ -7,11 +7,13 @@ const About = () => {
         {/* Experience */}
         <div className="header-1">Professional Summary</div>
         <div className="paragraph-1">
-          I am a recent college graduate with a military background in the
-          United States Air Force. I am equally capable of working alone as well
-          as within a team, and comfortable adapting to new technologies,
-          exercising initiative, and solving complex problems. My qualifications
-          include:
+          As a recent college graduate with a distinguished tenure in the United
+          States Air Force, I bring a unique blend of discipline, teamwork, and
+          adaptability to the software development field. My experience in the
+          military honed my ability to work effectively both independently and
+          as part of a team. I am adept at quickly mastering new technologies,
+          proactively taking initiative, and skillfully addressing complex
+          challenges with innovative solutions. My qualifications include:
         </div>
 
         <div className="indents">

@@ -58,7 +58,7 @@ const MovingUp = () => {
                   ? "mini-content-container current"
                   : "mini-content-container"
               }
-              // onClick={() => set_i(index)}
+              onClick={() => set_i(index)}
             >
               <img className="current-content" src={photo.miniPath} alt="" />
             </div>
@@ -83,12 +83,29 @@ const MovingUp = () => {
 
       <div className="project-details-grid">
         <div className="project-detail">
-          <div className="header-1">Summary</div>
+          <div className="header-1">Overview</div>
           <div className="paragraph-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-            maxime delectus placeat in doloribus quae harum, expedita,
-            reprehenderit odio inventore officia veritatis est sapiente,
-            consectetur necessitatibus a qui quam voluptas!
+            Moving Up is an exhilarating mobile game project, meticulously
+            crafted as a solo endeavor using Unity's versatile 2D engine.
+            Designed for Android with plans for an iOS version, this game is a
+            homage to the challenging spirit of celebrated platformers like
+            Celeste and Jump King. Moving Up aims to encapsulate the essence of
+            these adventures into an engaging, arcade-style experience tailored
+            for mobile platforms. Its core focus is on delivering intense
+            platforming challenges, seamlessly integrated within a user-friendly
+            mobile interface.
+          </div>
+        </div>
+        <div className="project-detail">
+          <div className="header-1">Role</div>
+          <div className="indents">
+            <div className="subheader-1">Solo Game Developer</div>
+            <div className="indents">
+              <div className="paragraph-1">
+                Game design, programming, animation, level design, quality
+                assurance and testing, and project management.
+              </div>
+            </div>
           </div>
         </div>
         <div className="project-detail">
