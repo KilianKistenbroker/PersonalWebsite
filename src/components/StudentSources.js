@@ -1,17 +1,41 @@
+import photoLibrary from "../data/photoLibrary.json";
+import { useState } from "react";
+
 const StudentSources = () => {
+  const [i, set_i] = useState(0);
+  const setCurrentPhoto = (increment, event) => {
+    const i_size = photoLibrary.student_sources_photos.length;
+
+    if (i + increment >= i_size) set_i(0);
+    else if (i + increment < 0) set_i(i_size - 1);
+    else set_i(i + increment);
+
+    // in case bottom div gets triggered.
+    event.stopPropagation();
+  };
+
   return (
     <div className="project-flex-container">
       <div className="current-content-grid">
         <div className="current-content-header" style={{ color: "whitesmoke" }}>
-          Title Screen
+          {photoLibrary.student_sources_photos[i].title}
         </div>
         <div className="current-content-container">
-          <img className="current-content" src="" alt="" />
+          {photoLibrary.student_sources_photos[i].type === "photo" ? (
+            <img
+              className="current-content"
+              src={photoLibrary.student_sources_photos[i].fullPath}
+              alt=""
+            />
+          ) : (
+            // fetch from s3 bucket
+            <video></video>
+          )}
         </div>
       </div>
 
       <div className="media-container-grid">
-        <div className="media-input">
+        <div className="media-input" onClick={(e) => setCurrentPhoto(-1, e)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -27,14 +51,20 @@ const StudentSources = () => {
           </svg>
         </div>
         <div className="media-content-grid">
-          <div className="mini-content-container current">photo 1</div>
-          <div className="mini-content-container">photo 2</div>
-          <div className="mini-content-container">photo 3</div>
-          <div className="mini-content-container">photo 4</div>
-          <div className="mini-content-container">photo 5</div>
-          <div className="mini-content-container">photo 6</div>
+          {photoLibrary.student_sources_photos.map((photo, index) => (
+            <div
+              className={
+                i === index
+                  ? "mini-content-container current"
+                  : "mini-content-container"
+              }
+              // onClick={() => set_i(index)}
+            >
+              <img className="current-content" src={photo.miniPath} alt="" />
+            </div>
+          ))}
         </div>
-        <div className="media-input">
+        <div className="media-input" onClick={(e) => setCurrentPhoto(1, e)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"

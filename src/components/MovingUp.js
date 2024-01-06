@@ -3,7 +3,6 @@ import photoLibrary from "../data/photoLibrary.json";
 
 const MovingUp = () => {
   const [i, set_i] = useState(0);
-
   const setCurrentPhoto = (increment, event) => {
     const i_size = photoLibrary.moving_up_photos.length;
 
@@ -52,70 +51,18 @@ const MovingUp = () => {
           </svg>
         </div>
         <div className="media-content-grid">
-          <div
-            className={
-              i === 0
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            onClick={() => set_i(0)}
-          >
-            <img
-              className="current-content"
-              src={photoLibrary.moving_up_photos[0].miniPath}
-              alt=""
-            />
-          </div>
-          <div
-            className={
-              i === 1
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            onClick={() => set_i(1)}
-          >
-            photo 2
-          </div>
-          <div
-            className={
-              i === 2
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            onClick={() => set_i(2)}
-          >
-            photo 3
-          </div>
-          <div
-            className={
-              i === 3
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            // onClick={() => set_i(3)}
-          >
-            photo 4
-          </div>
-          <div
-            className={
-              i === 4
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            // onClick={() => set_i(4)}
-          >
-            photo 5
-          </div>
-          <div
-            className={
-              i === 5
-                ? "mini-content-container current"
-                : "mini-content-container"
-            }
-            // onClick={() => set_i(5)}
-          >
-            photo 6
-          </div>
+          {photoLibrary.moving_up_photos.map((photo, index) => (
+            <div
+              className={
+                i === index
+                  ? "mini-content-container current"
+                  : "mini-content-container"
+              }
+              // onClick={() => set_i(index)}
+            >
+              <img className="current-content" src={photo.miniPath} alt="" />
+            </div>
+          ))}
         </div>
         <div className="media-input" onClick={(e) => setCurrentPhoto(1, e)}>
           <svg

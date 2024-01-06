@@ -11,13 +11,25 @@
         {
             "id": 2,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_home_scene.png",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_home_scene.png",
             "title": "Home Scene (WIP)",
             "type" : "photo"
         },
         {
             "id": 3,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_level_1.png",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_level_1.png",
             "title": "Level 1 (WIP)",
+            "type" : "photo"
+        }
+    ],
+
+    "student_sources_photos": [
+        {
+            "id": 1,
+            "fullPath": "",
+            "miniPath": "",
+            "title": "placeholder",
             "type" : "photo"
         }
     ]
