@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import photoLibrary from "../data/photoLibrary.json";
 
 const MovingUp = () => {
@@ -13,6 +13,14 @@ const MovingUp = () => {
     // in case bottom div gets triggered.
     event.stopPropagation();
   };
+
+  useEffect(() => {
+    var element = document.getElementById("current-mini-content");
+    if (element) {
+      const offsetLeft = element.offsetLeft - 75;
+      element.parentElement.scrollLeft = offsetLeft;
+    }
+  }, [i]);
 
   return (
     <div className="project-flex-container">
@@ -50,20 +58,29 @@ const MovingUp = () => {
             />
           </svg>
         </div>
-        <div className="media-content-grid">
-          {photoLibrary.moving_up_photos.map((photo, index) => (
-            <div
-              className={
-                i === index
-                  ? "mini-content-container current"
-                  : "mini-content-container"
-              }
-              onClick={() => set_i(index)}
-            >
-              <img className="current-content" src={photo.miniPath} alt="" />
-            </div>
-          ))}
+        <div className="stretch">
+          <div className="media-content-grid">
+            {photoLibrary.moving_up_photos.map((photo, index) => (
+              <div
+                id={i === index ? "current-mini-content" : "null"}
+                className={
+                  i === index
+                    ? "mini-content-container current"
+                    : "mini-content-container"
+                }
+                onClick={() => set_i(index)}
+              >
+                <img
+                  className="current-content"
+                  style={{ height: "100%" }}
+                  src={photo.miniPath}
+                  alt=""
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
         <div className="media-input" onClick={(e) => setCurrentPhoto(1, e)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,15 +102,21 @@ const MovingUp = () => {
         <div className="project-detail">
           <div className="header-1">Overview</div>
           <div className="paragraph-1">
-            Moving Up is an exhilarating mobile game project, meticulously
-            crafted as a solo endeavor using Unity's versatile 2D engine.
-            Designed for Android with plans for an iOS version, this game is a
-            homage to the challenging spirit of celebrated platformers like
-            Celeste and Jump King. Moving Up aims to encapsulate the essence of
-            these adventures into an engaging, arcade-style experience tailored
-            for mobile platforms. Its core focus is on delivering intense
-            platforming challenges, seamlessly integrated within a user-friendly
-            mobile interface.
+            Moving Up is a work-in-progress mobile game project, crafted as a
+            solo endeavor using Unity's versatile 2D engine. Designed for
+            Android with plans for an iOS version, this game is a homage to the
+            challenging spirit of celebrated platformers like Celeste and Jump
+            King. Moving Up aims to encapsulate the essence of these adventures
+            into an engaging, arcade-style experience tailored for mobile
+            platforms. Its core focus is on delivering intense platforming
+            challenges, seamlessly integrated within a user-friendly mobile
+            interface.
+          </div>
+          <div className="paragraph-1">
+            <b>Early Access Release Date: </b>TBD
+          </div>
+          <div className="paragraph-1">
+            <b>Official Release Date: </b>TBD
           </div>
         </div>
         <div className="project-detail">
@@ -102,8 +125,8 @@ const MovingUp = () => {
             <div className="subheader-1">Solo Game Developer</div>
             <div className="indents">
               <div className="paragraph-1">
-                Game design, programming, animation, level design, quality
-                assurance and testing, and project management.
+                Game design, level design, programming, animation, project
+                management, quality assurance and testing.
               </div>
             </div>
           </div>

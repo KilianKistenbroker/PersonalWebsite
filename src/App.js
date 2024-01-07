@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("Projects");
@@ -16,6 +16,30 @@ function App() {
     setIsMovingUpExpanded(false);
     setIsStudentSourcesExpanded(false);
   };
+
+  // --------- listening for screen resizing here --------- //
+
+  const [windowDimension, setWindowDimension] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+    mobileMode: null,
+  });
+  const detectSize = () => {
+    setWindowDimension({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+      mobileMode: window.innerWidth < 800,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+    console.log("width: " + windowDimension.winWidth);
+    console.log("height: " + windowDimension.winHeight);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimension]);
 
   return (
     <div className="App">

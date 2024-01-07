@@ -58,7 +58,7 @@ const StudentSources = () => {
                   ? "mini-content-container current"
                   : "mini-content-container"
               }
-              // onClick={() => set_i(index)}
+              onClick={() => set_i(index)}
             >
               <img className="current-content" src={photo.miniPath} alt="" />
             </div>

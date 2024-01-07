@@ -3,7 +3,7 @@ const About = () => {
     <div className="container">
       <div className="project-flex">
         {/* Name */}
-        <div className="header-2"> Kilian Kistenbroker</div>
+        <div className="header-2">Kilian Kistenbroker</div>
         {/* Experience */}
         <div className="header-1">Professional Summary</div>
         <div className="paragraph-1">

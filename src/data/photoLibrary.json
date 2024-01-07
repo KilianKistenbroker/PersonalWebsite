@@ -4,21 +4,21 @@
         {
             "id": 1,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_title_scene.jpg",
-            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_title_scene.jpg",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_title_scene_mini.png",
             "title": "Title Scene (WIP)",
             "type" : "photo"
         },
         {
             "id": 2,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_home_scene.png",
-            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_home_scene.png",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_home_scene_mini.png",
             "title": "Home Scene (WIP)",
             "type" : "photo"
         },
         {
             "id": 3,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_level_1.png",
-            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_level_1.png",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_level_1_mini.png",
             "title": "Level 1 (WIP)",
             "type" : "photo"
         }
@@ -27,9 +27,16 @@
     "student_sources_photos": [
         {
             "id": 1,
-            "fullPath": "",
-            "miniPath": "",
-            "title": "placeholder",
+            "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/landing_page.png",
+            "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/landing_page_mini.png",
+            "title": "Landing Page",
+            "type" : "photo"
+        },
+        {
+            "id": 2,
+            "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/sign_up_page.png",
+            "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/sign_up_page_mini.png",
+            "title": "Sign Up Page",
             "type" : "photo"
         }
     ]
