@@ -7,6 +7,7 @@ const Projects = ({
   setIsMovingUpExpanded,
   isStudentSourcesExpanded,
   setIsStudentSourcesExpanded,
+  windowDimension,
 }) => {
   return (
     <div className="container">
@@ -53,7 +54,7 @@ const Projects = ({
                 : "project-content collapsed"
             }
           >
-            <MovingUp />
+            <MovingUp windowDimension={windowDimension} />
           </div>
         </div>
 
@@ -101,7 +102,7 @@ const Projects = ({
                 : "project-content collapsed"
             }
           >
-            <StudentSources />
+            <StudentSources windowDimension={windowDimension} />
           </div>
         </div>
       </div>

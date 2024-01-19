@@ -47,13 +47,26 @@ const About = () => {
         <div className="header-1">Contacts</div>
         <div className="indents">
           <div className="bullet-1">
-            LinkedIn: <a href=""> placeholder.com</a>
+            <b>Email: </b>
+            <a className="link" href="mailto:kilian.kistenbroker@gmail.com.com">
+              kilian.kistenbroker@gmail.com
+            </a>
           </div>
           <div className="bullet-1">
-            Github: <a href=""> placeholder.com</a>
+            <b>LinkedIn: </b>
+            <a className="link" href="" target="_blank">
+              linkedin.com/KilianKistenbroker
+            </a>
           </div>
           <div className="bullet-1">
-            Email: <a href=""> placeholder.com</a>
+            <b>Github: </b>
+            <a
+              className="link"
+              href="https://github.com/KilianKistenbroker"
+              target="_blank"
+            >
+              github.com/KilianKistenbroker
+            </a>
           </div>
         </div>
 

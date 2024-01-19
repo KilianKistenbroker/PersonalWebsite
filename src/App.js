@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar
-          selectedPage={selectedPage}
+          // selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
           collapseAll={collapseAll}
         />
@@ -58,6 +58,7 @@ function App() {
                 setIsMovingUpExpanded={setIsMovingUpExpanded}
                 isStudentSourcesExpanded={isStudentSourcesExpanded}
                 setIsStudentSourcesExpanded={setIsStudentSourcesExpanded}
+                windowDimension={windowDimension}
               />
             }
           />

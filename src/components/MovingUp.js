@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import photoLibrary from "../data/photoLibrary.json";
 
-const MovingUp = () => {
+const MovingUp = ({ windowDimension }) => {
   const [i, set_i] = useState(0);
   const setCurrentPhoto = (increment, event) => {
     const i_size = photoLibrary.moving_up_photos.length;
@@ -28,16 +28,35 @@ const MovingUp = () => {
         <div className="current-content-header" style={{ color: "whitesmoke" }}>
           {photoLibrary.moving_up_photos[i].title}
         </div>
-        <div className="current-content-container">
+        <div
+          className="current-content-container"
+          style={
+            windowDimension.winWidth > 767
+              ? { height: "35rem" }
+              : { height: "25rem" }
+          }
+        >
           {photoLibrary.moving_up_photos[i].type === "photo" ? (
             <img
               className="current-content"
+              style={
+                windowDimension.winWidth > 767
+                  ? { maxHeight: "35rem" }
+                  : { maxHeight: "25rem", overflow: "hidden" }
+              }
               src={photoLibrary.moving_up_photos[i].fullPath}
               alt=""
             />
           ) : (
-            // fetch from s3 bucket
-            <video></video>
+            // fetch Youtube
+            <iframe
+              // className="current-content"
+              title="YouTube Video"
+              style={{ width: "100%", height: "100%" }}
+              src={`https://www.youtube.com/embed/${photoLibrary.moving_up_photos[i].fullPath}`}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
           )}
         </div>
       </div>
@@ -102,15 +121,16 @@ const MovingUp = () => {
         <div className="project-detail">
           <div className="header-1">Overview</div>
           <div className="paragraph-1">
-            Moving Up is a work-in-progress mobile game project, crafted as a
-            solo endeavor using Unity's versatile 2D engine. Designed for
-            Android with plans for an iOS version, this game is a homage to the
+            Moving Up is a work-in-progress mobile game project that I am solo
+            developing with Unity's 2D game engine. This game is a homage to the
             challenging spirit of celebrated platformers like Celeste and Jump
-            King. Moving Up aims to encapsulate the essence of these adventures
-            into an engaging, arcade-style experience tailored for mobile
-            platforms. Its core focus is on delivering intense platforming
-            challenges, seamlessly integrated within a user-friendly mobile
-            interface.
+            King. Similar to badges in Super Mario Wonders, there is a focus on
+            swapping tools to alter and enhance the way players interact with
+            the world. Moving Up aims to encapsulate the essence of these
+            adventures into an engaging, arcade-style experience tailored for
+            mobile platforms. Its core focus is on delivering intense
+            platforming challenges, seamlessly integrated within a user-friendly
+            mobile interface.
           </div>
           <div className="paragraph-1">
             <b>Early Access Release Date: </b>TBD
@@ -133,20 +153,24 @@ const MovingUp = () => {
         </div>
         <div className="project-detail">
           <div className="header-1">Features</div>
-          <div className="paragraph-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-            maxime delectus placeat in doloribus quae harum, expedita,
-            reprehenderit odio inventore officia veritatis est sapiente,
-            consectetur necessitatibus a qui quam voluptas!
+          <div className="indents">
+            <div className="paragraph-1">
+              - 3 different worlds to platform, and 9 levels per world.
+            </div>
+            <div className="paragraph-1">
+              - Tools for gliding, dashing, and climbing passed obstacles.
+            </div>
+            <div className="paragraph-1">
+              - Several stars and costumes to find and collect.
+            </div>
           </div>
         </div>
         <div className="project-detail">
           <div className="header-1">Tech Stack</div>
-          <div className="paragraph-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-            maxime delectus placeat in doloribus quae harum, expedita,
-            reprehenderit odio inventore officia veritatis est sapiente,
-            consectetur necessitatibus a qui quam voluptas!
+          <div className="indents">
+            <div className="paragraph-1">- Unity 2D Game Engine.</div>
+            <div className="paragraph-1">- Photoshop, Procreate.</div>
+            <div className="paragraph-1">- C#.</div>
           </div>
         </div>
       </div>

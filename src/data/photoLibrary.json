@@ -22,6 +22,14 @@
             "title": "Level 1 (WIP)",
             "type" : "photo"
         }
+        ,
+        {
+            "id": 4,
+            "fullPath": "XH7WZhpzQvU",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/level_1_early_gameplay_mini.png",
+            "title": "Level 1 Early Gameplay",
+            "type" : "video"
+        }
     ],
 
     "student_sources_photos": [
@@ -37,6 +45,20 @@
             "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/sign_up_page.png",
             "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/sign_up_page_mini.png",
             "title": "Sign Up Page",
+            "type" : "photo"
+        },
+        {
+            "id": 3,
+            "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/home_page.png",
+            "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/home_page_mini.png",
+            "title": "Home Page",
+            "type" : "photo"
+        },
+        {
+            "id": 4,
+            "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/home_page_early_mockup.png",
+            "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/home_page_early_mockup_mini.png",
+            "title": "Home Page Mockup",
             "type" : "photo"
         }
     ]

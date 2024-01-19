@@ -1,17 +1,21 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const Navbar = ({ selectedPage, setSelectedPage, collapseAll }) => {
-  //   const navigate = useNavigate();
-  const setPage = (page) => {
-    setSelectedPage(page);
+const Navbar = ({ collapseAll }) => {
+  const location = useLocation();
 
-    if (page === "Projects") {
-      // collapse all projects
+  const collapse = () => {
+    if (location.pathname === "/") {
+      // collapse all projects tabs
       collapseAll();
     }
-
-    console.log("current page: " + page);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    console.log("path: " + location.pathname);
+  }, [location.pathname]);
 
   return (
     <div className="navbar-container">
@@ -20,9 +24,9 @@ const Navbar = ({ selectedPage, setSelectedPage, collapseAll }) => {
       <div className="navbar-grid">
         <Link
           to={"/"}
-          onClick={() => setPage("Projects")}
+          onClick={() => collapse()}
           className={
-            selectedPage === "Projects"
+            window.location.pathname === "/"
               ? "navbar-content navbar-selected"
               : "navbar-content"
           }
@@ -34,11 +38,10 @@ const Navbar = ({ selectedPage, setSelectedPage, collapseAll }) => {
         <Link
           to={"/about"}
           className={
-            selectedPage === "About"
+            window.location.pathname === "/about"
               ? "navbar-content navbar-selected"
               : "navbar-content"
           }
-          onClick={() => setPage("About")}
         >
           About
         </Link>
