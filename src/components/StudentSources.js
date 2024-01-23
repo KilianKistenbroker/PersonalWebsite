@@ -124,7 +124,7 @@ const StudentSources = ({ windowDimension }) => {
                 href="http://student-sources.s3-website-us-west-1.amazonaws.com/"
                 target="_blank"
               >
-                student-sources
+                StudentSources.com
               </a>
             </div>
           </div>
@@ -189,7 +189,7 @@ const StudentSources = ({ windowDimension }) => {
           <div className="indents">
             <div className="paragraph-1">- Java, Javascript, CSS, HTML.</div>
             <div className="paragraph-1">- React, Springboot.</div>
-            <div className="paragraph-1">- MySQL.</div>
+            <div className="paragraph-1">- SQL, MySQL.</div>
             <div className="paragraph-1">- AWS.</div>
           </div>
         </div>

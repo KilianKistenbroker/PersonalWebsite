@@ -279,6 +279,7 @@ display: grid;
 
 .bullet-1 {
   padding: 0.3125rem;
+  padding-left: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: dimgray;
 }
