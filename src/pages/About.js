@@ -42,9 +42,7 @@ const About = () => {
         <div className="indents">
           <div className="subheader-1">Experience in: </div>
           <div className="indents">
-            <div className="bullet-1">
-              - Java, JavaScript, C, C#, CSS, HTML.
-            </div>
+            <div className="bullet-1">- Java, JavaScript, C#, CSS, HTML.</div>
             <div className="bullet-1">- Spring Boot, React.</div>
             <div className="bullet-1">- SQL, MySQL Workbench.</div>
             <div className="bullet-1">- Amazon Web Services.</div>
@@ -54,7 +52,7 @@ const About = () => {
         <div className="indents">
           <div className="subheader-1">Some experience in: </div>
           <div className="indents">
-            <div className="bullet-1">- C++, TypeScript.</div>
+            <div className="bullet-1">- C, C++, TypeScript, Python.</div>
           </div>
         </div>
         <div className="header-1">Personal Introduction</div>
@@ -67,20 +65,19 @@ const About = () => {
           like math and physics.
         </div>
         <div className="paragraph-1">
-          In high school, I wrote a 90,000-word fiction book with themes of male
-          loneliness in my free time, and self-published it through one of
-          Amazon's services shortly after graduating. After high school, I
-          joined the United States Air Force and served for four years as an
-          Aircraft Maintenance Technician for two airframes and earned two
-          medals for my accomplishments. Currently, I have been honorably
-          discharged from the Air Force and am transitioning into a software
-          position with a keen interest in starting a small business in game
-          development.
+          In high school, I wrote a 90,000-word fiction book in my free time,
+          and self-published it through one of Amazon's services shortly after
+          graduating. After high school, I joined the United States Air Force
+          and served for four years as an Aircraft Maintenance Technician for
+          two airframes and earned two medals for my accomplishments. Currently,
+          I have been honorably discharged from the Air Force and am
+          transitioning into a software position with a keen interest in
+          starting a small business in game development.
         </div>
         <div className="paragraph-1">
           In my free time, I am usually playing a video game or trying to
           develop one. If I ever get the resources to do so, I will probably
-          turn that book I mentioned earlier into a video game to justify all
+          adapt that book I mentioned earlier into a video game to justify all
           the time I spent writing it.
         </div>
       </div>
