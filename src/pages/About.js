@@ -1,3 +1,5 @@
+import selfie from "../selfies/headshot3.png"
+
 const About = () => {
   return (
     <div className="container">
@@ -79,6 +81,10 @@ const About = () => {
           develop one. If I ever get the resources to do so, I will probably
           adapt that book I mentioned earlier into a video game to justify all
           the time I spent writing it.
+        </div>
+
+        <div className="img-container">
+          <img className="img" src={selfie} alt =""/>
         </div>
       </div>
     </div>

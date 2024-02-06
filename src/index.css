@@ -332,3 +332,18 @@ display: grid;
   transition: .1s;
   cursor: pointer;
 }
+
+/* selfie */
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  background-color: black;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+} 
+.img {
+  max-width: 100%; /* Match the height of the container */
+  max-height: 35rem; /* This centers the image if it's smaller than the container */
+}
