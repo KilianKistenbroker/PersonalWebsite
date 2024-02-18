@@ -275,6 +275,7 @@ display: grid;
 .indents {
   /* padding-top: 0.3125rem; */
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .bullet-1 {

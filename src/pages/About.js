@@ -1,4 +1,6 @@
 import selfie from "../selfies/headshot3.png"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
   return (
@@ -32,16 +34,27 @@ const About = () => {
             github.com/KilianKistenbroker
           </a>
         </div>
+        <div className="bullet-1">
+          <b>Repository: </b>
+          <a
+            className="link"
+            href="https://github.com/KilianKistenbroker/PersonalWebsite"
+            target="_blank"
+          >
+            personalWebsite
+          </a>
+        </div>
         {/* Experience */}
         <div className="header-1">Professional Summary</div>
-        <div className="paragraph-1">
+        <div className="indents">
+          <div className="paragraph-1">
           I am a recent Computer Science graduate with a 4-year background in
           the United States Air Force. I am equally capable of working alone as
           well as within a team, and comfortable adapting to new technologies,
           exercising initiative, and solving complex problems. My qualifications
           include:
         </div>
-        <div className="indents">
+        {/* <div className="indents"> */}
           <div className="subheader-1">Experience in: </div>
           <div className="indents">
             <div className="bullet-1">- Java, JavaScript, C#, CSS, HTML.</div>
@@ -50,17 +63,20 @@ const About = () => {
             <div className="bullet-1">- Amazon Web Services.</div>
             <div className="bullet-1">- Unity Game Engine.</div>
           </div>
-        </div>
-        <div className="indents">
+        {/* </div> */}
+        {/* <div className="indents"> */}
           <div className="subheader-1">Some experience in: </div>
           <div className="indents">
             <div className="bullet-1">- C, C++, TypeScript, Python.</div>
             <div className="bullet-1">- Express.</div>
             <div className="bullet-1">- MongoDB.</div>
           </div>
+        {/* </div> */}
         </div>
+        
         <div className="header-1">Personal Introduction</div>
-        <div className="paragraph-1">
+          <div className="indents">
+            <div className="paragraph-1">
           I am from the Bay Area in Northern California, and I am quite
           passionate about video game development and front-end development.
           These subjects interest me because they offer a blend of creativity
@@ -84,9 +100,11 @@ const About = () => {
           adapt that book I mentioned earlier into a video game to justify all
           the time I spent writing it.
         </div>
+          </div>
+          
 
         <div className="img-container">
-          <img className="img" src={selfie} alt =""/>
+          <LazyLoadImage className="img" src={selfie} alt =""/>
         </div>
       </div>
     </div>

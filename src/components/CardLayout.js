@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CardLayout = ({projectId, photoPath, projectHeight, windowDimension}) => {
     const [i, set_i] = useState(0);
@@ -39,7 +41,7 @@ const CardLayout = ({projectId, photoPath, projectHeight, windowDimension}) => {
               <div>no content</div>
             ) :
             photoPath[i].type === "photo" ? (
-              <img
+              <LazyLoadImage
                 className="current-content"
                 style={
                   windowDimension.winWidth > 767
@@ -91,7 +93,7 @@ const CardLayout = ({projectId, photoPath, projectHeight, windowDimension}) => {
                   }
                   onClick={() => set_i(index)}
                 >
-                  <img
+                  <LazyLoadImage
                     className="current-content"
                     style={{ height: "100%" }}
                     src={photo.miniPath}
