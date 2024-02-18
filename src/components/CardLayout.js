@@ -25,7 +25,7 @@ const CardLayout = ({projectId, photoPath, projectHeight, windowDimension}) => {
       <div>
         <div className="current-content-grid">
           <div className="current-content-header" style={{ color: "whitesmoke" }}>
-            {photoPath.title}
+            {photoPath[i].title}
           </div>
           <div
             className="current-content-container"
@@ -35,7 +35,10 @@ const CardLayout = ({projectId, photoPath, projectHeight, windowDimension}) => {
                 : { height: `${projectHeight}rem` }
             }
           >
-            {photoPath[i].type === "photo" ? (
+            {!photoPath[i] ? (
+              <div>no content</div>
+            ) :
+            photoPath[i].type === "photo" ? (
               <img
                 className="current-content"
                 style={

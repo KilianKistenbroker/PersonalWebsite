@@ -61,6 +61,30 @@
             "title": "Home Page Mockup",
             "type" : "photo"
         }
+    ],
+
+    "the_marble_game_photos" : [
+        {
+            "id": 1,
+            "fullPath": "/photoLibrary/theMarbleGamePhotos/fullPhotos/TheMarbleGame-home scene.png",
+            "miniPath": "/photoLibrary/theMarbleGamePhotos/miniPhotos/TheMarbleGame-home scene (mini).png",
+            "title": "Home Scene",
+            "type" : "photo"
+        },
+        {
+            "id": 2,
+            "fullPath": "/photoLibrary/theMarbleGamePhotos/fullPhotos/TheMarbleGame-shop menu.png",
+            "miniPath": "/photoLibrary/theMarbleGamePhotos/miniPhotos/TheMarbleGame-shop menu (mini).png",
+            "title": "Shop Menu",
+            "type" : "photo"
+        },
+        {
+            "id": 3,
+            "fullPath": "/photoLibrary/theMarbleGamePhotos/fullPhotos/TheMarbleGame-level 1.png",
+            "miniPath": "/photoLibrary/theMarbleGamePhotos/miniPhotos/TheMarbleGame-level 1 (mini).png",
+            "title": "Level 1",
+            "type" : "photo"
+        }
     ]
     
     

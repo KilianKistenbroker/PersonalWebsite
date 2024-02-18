@@ -12,7 +12,7 @@ const Projects = ({
   const componentsList = [
     [<MovingUp windowDimension={windowDimension}/>, "Mobile Platformer Game"],
     [<StudentSources windowDimension={windowDimension}/>, "File Management Website"],
-    [<TheMarbleGame windowDimension={windowDimension}/>, "2D Platform Game Engine"]
+    [<TheMarbleGame windowDimension={windowDimension}/>, "2D Game Engine"]
   ];
 
   return (
@@ -56,7 +56,11 @@ const Projects = ({
                     </svg>
                   )}
                 </div>
-                {component[1]}
+                
+                <div style={{marginLeft:"1rem"}}>
+                  {component[1]}
+                </div>
+                
               </div>
               <div
                 className={

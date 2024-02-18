@@ -4,26 +4,6 @@ import { Link } from "react-router-dom";
 import CardLayout from "../components/CardLayout";
 
 const StudentSources = ({ windowDimension }) => {
-  const [i, set_i] = useState(0);
-
-  const setCurrentPhoto = (increment, event) => {
-    const i_size = photoLibrary.student_sources_photos.length;
-
-    if (i + increment >= i_size) set_i(0);
-    else if (i + increment < 0) set_i(i_size - 1);
-    else set_i(i + increment);
-
-    // in case bottom div gets triggered.
-    event.stopPropagation();
-  };
-
-  useEffect(() => {
-    var element = document.getElementById("current-mini-content-2");
-    if (element) {
-      const offsetLeft = element.offsetLeft - 75;
-      element.parentElement.scrollLeft = offsetLeft;
-    }
-  }, [i]);
 
   return (
     <div className="project-flex-container">
@@ -66,18 +46,21 @@ const StudentSources = ({ windowDimension }) => {
         </div>
         <div className="project-detail">
           <div className="header-1">Overview</div>
-          <div className="paragraph-1">
-            <b>Student Sources </b> is a college project I developed alongside a team
-            for my Software Engineering capstone course. The purpose of this
-            website is to help students study by providing tools to organize and
-            share lecture notes among peers. Student Sources is inspired by
-            other cloud-based file organization sites like Dropbox and OneDrive,
-            but with more of a social implementation. Our user interface
-            provides features to easily search up other users in our database to
-            view and download any of their publicly shared files and folders.
-            Additionally, users can comment on other users' public files and
-            form chat groups with each other.
+            <div className="indents">
+              <div className="paragraph-1">
+              <b>Student Sources </b> is a college project I developed alongside a team
+              for my Software Engineering capstone course. The purpose of this
+              website is to help students study by providing tools to organize and
+              share lecture notes among peers. Student Sources is inspired by
+              other cloud-based file organization sites like Dropbox and OneDrive,
+              but with more of a social implementation. Our user interface
+              provides features to easily search up other users in our database to
+              view and download any of their publicly shared files and folders.
+              Additionally, users can comment on other users' public files and
+              form chat groups with each other.
+            </div>
           </div>
+          
         </div>
         <div className="project-detail">
           <div className="header-1">Role</div>
