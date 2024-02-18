@@ -35,7 +35,7 @@ const About = () => {
         {/* Experience */}
         <div className="header-1">Professional Summary</div>
         <div className="paragraph-1">
-          I am a recent computer science graduate with a 4-year background in
+          I am a recent Computer Science graduate with a 4-year background in
           the United States Air Force. I am equally capable of working alone as
           well as within a team, and comfortable adapting to new technologies,
           exercising initiative, and solving complex problems. My qualifications
@@ -55,6 +55,8 @@ const About = () => {
           <div className="subheader-1">Some experience in: </div>
           <div className="indents">
             <div className="bullet-1">- C, C++, TypeScript, Python.</div>
+            <div className="bullet-1">- Express.</div>
+            <div className="bullet-1">- MongoDB.</div>
           </div>
         </div>
         <div className="header-1">Personal Introduction</div>

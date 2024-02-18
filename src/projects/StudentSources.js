@@ -1,6 +1,7 @@
 import photoLibrary from "../data/photoLibrary.json";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CardLayout from "../components/CardLayout";
 
 const StudentSources = ({ windowDimension }) => {
   const [i, set_i] = useState(0);
@@ -26,92 +27,13 @@ const StudentSources = ({ windowDimension }) => {
 
   return (
     <div className="project-flex-container">
-      <div className="current-content-grid">
-        <div className="current-content-header" style={{ color: "whitesmoke" }}>
-          {photoLibrary.student_sources_photos[i].title}
-        </div>
-        <div
-          className="current-content-container"
-          style={
-            windowDimension.winWidth > 767
-              ? { height: "35rem" }
-              : { height: "14rem" }
-          }
-        >
-          {photoLibrary.student_sources_photos[i].type === "photo" ? (
-            <img
-              className="current-content"
-              style={
-                windowDimension.winWidth > 767
-                  ? { maxHeight: "35rem" }
-                  : { maxHeight: "14rem" }
-              }
-              src={photoLibrary.student_sources_photos[i].fullPath}
-              alt=""
-            />
-          ) : (
-            // fetch from s3 bucket
-            <video></video>
-          )}
-        </div>
-      </div>
 
-      <div className="media-container-grid">
-        <div className="media-input" onClick={(e) => setCurrentPhoto(-1, e)}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            class="bi bi-chevron-compact-left"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"
-            />
-          </svg>
-        </div>
-
-        <div className="stretch">
-          <div className="media-content-grid">
-            {photoLibrary.student_sources_photos.map((photo, index) => (
-              <div
-                id={i === index ? "current-mini-content-2" : "null"}
-                className={
-                  i === index
-                    ? "mini-content-container current"
-                    : "mini-content-container"
-                }
-                onClick={() => set_i(index)}
-              >
-                <img
-                  className="current-content"
-                  style={{ height: "100%" }}
-                  src={photo.miniPath}
-                  alt=""
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="media-input" onClick={(e) => setCurrentPhoto(1, e)}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            class="bi bi-chevron-compact-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"
-            />
-          </svg>
-        </div>
-      </div>
+<CardLayout
+        projectId = {2}
+        photoPath={photoLibrary.student_sources_photos}
+        projectHeight={14}
+        windowDimension={windowDimension}
+      />
 
       <div className="project-details-grid">
         <div className="project-detail">
@@ -145,7 +67,7 @@ const StudentSources = ({ windowDimension }) => {
         <div className="project-detail">
           <div className="header-1">Overview</div>
           <div className="paragraph-1">
-            Student Sources is a college project I developed alongside a team
+            <b>Student Sources </b> is a college project I developed alongside a team
             for my Software Engineering capstone course. The purpose of this
             website is to help students study by providing tools to organize and
             share lecture notes among peers. Student Sources is inspired by

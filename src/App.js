@@ -8,14 +8,13 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("Projects");
-  const [isMovingUpExpanded, setIsMovingUpExpanded] = useState(false);
-  const [isStudentSourcesExpanded, setIsStudentSourcesExpanded] =
-    useState(false);
 
+  const [isExpanded, setIsExpanded] = useState([false, false, false]);
+  
   const collapseAll = () => {
-    setIsMovingUpExpanded(false);
-    setIsStudentSourcesExpanded(false);
+    setIsExpanded(isExpanded.map(() => false));
   };
+  
 
   // --------- listening for screen resizing here --------- //
 
@@ -54,10 +53,8 @@ function App() {
             path="/"
             element={
               <Projects
-                isMovingUpExpanded={isMovingUpExpanded}
-                setIsMovingUpExpanded={setIsMovingUpExpanded}
-                isStudentSourcesExpanded={isStudentSourcesExpanded}
-                setIsStudentSourcesExpanded={setIsStudentSourcesExpanded}
+                isExpanded={isExpanded}
+                setIsExpanded={setIsExpanded}
                 windowDimension={windowDimension}
               />
             }
