@@ -238,8 +238,8 @@ code {
 }
 
 .project-details-grid {
-padding-left: 1.25rem;
-padding-right: 1.25rem;
+padding-left: 1rem;
+padding-right: 1rem;
 display: grid;
 }
 
@@ -274,8 +274,8 @@ display: grid;
 
 .indents {
   /* padding-top: 0.3125rem; */
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .bullet-1 {

@@ -57,19 +57,19 @@ const About = () => {
         {/* <div className="indents"> */}
           <div className="subheader-1">Experience in: </div>
           <div className="indents">
-            <div className="bullet-1">- Java, JavaScript, C#, CSS, HTML.</div>
-            <div className="bullet-1">- Spring Boot, React.</div>
-            <div className="bullet-1">- SQL, MySQL Workbench.</div>
-            <div className="bullet-1">- Amazon Web Services.</div>
-            <div className="bullet-1">- Unity Game Engine.</div>
+            <div className="bullet-1">Java, JavaScript, C#, CSS, HTML.</div>
+            <div className="bullet-1">Spring Boot, React.</div>
+            <div className="bullet-1">SQL, MySQL Workbench.</div>
+            <div className="bullet-1">Amazon Web Services.</div>
+            <div className="bullet-1">Unity Game Engine.</div>
           </div>
         {/* </div> */}
         {/* <div className="indents"> */}
           <div className="subheader-1">Some experience in: </div>
           <div className="indents">
-            <div className="bullet-1">- C, C++, TypeScript, Python.</div>
-            <div className="bullet-1">- Express.</div>
-            <div className="bullet-1">- MongoDB.</div>
+            <div className="bullet-1">C, C++, TypeScript, Python.</div>
+            <div className="bullet-1">Express.</div>
+            <div className="bullet-1">MongoDB.</div>
           </div>
         {/* </div> */}
         </div>

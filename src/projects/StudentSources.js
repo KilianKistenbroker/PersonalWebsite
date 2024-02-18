@@ -78,24 +78,24 @@ const StudentSources = ({ windowDimension }) => {
           <div className="header-1">Features</div>
           <div className="indents">
             <div className="paragraph-1">
-              - Support for jpg, png, gif, pdf, txt, mp3, mp4, and mov files.
+              Support for jpg, png, gif, pdf, txt, mp3, mp4, and mov files.
             </div>
             <div className="paragraph-1">
-              - View and comment on other users public files.
+              View and comment on other users public files.
             </div>
             <div className="paragraph-1">
-              - Create chatgroups with other users.
+              Create chatgroups with other users.
             </div>
-            <div className="paragraph-1">- Allowed 1GB of cloud storage.</div>
+            <div className="paragraph-1">Allowed 1GB of cloud storage.</div>
           </div>
         </div>
         <div className="project-detail">
           <div className="header-1">Tech Stack</div>
           <div className="indents">
-            <div className="paragraph-1">- Java, Javascript, CSS, HTML.</div>
-            <div className="paragraph-1">- React, Springboot.</div>
-            <div className="paragraph-1">- SQL, MySQL.</div>
-            <div className="paragraph-1">- AWS.</div>
+            <div className="paragraph-1">Java, Javascript, CSS, HTML.</div>
+            <div className="paragraph-1">React, Springboot.</div>
+            <div className="paragraph-1">SQL, MySQL.</div>
+            <div className="paragraph-1">AWS.</div>
           </div>
         </div>
       </div>

@@ -29,15 +29,17 @@ const MovingUp = ({ windowDimension }) => {
               platforming challenges, seamlessly integrated within a user-friendly
               mobile interface.
             </div>
-          </div>
-          
-          <br></br>
+
+            <br></br>
           <div className="paragraph-1">
             <i>Early Access Release Date: TBD</i>
           </div>
           <div className="paragraph-1">
             <i>Official Release Date: TBD</i>
           </div>
+          </div>
+          
+          
         </div>
         <div className="project-detail">
           <div className="header-1">Role</div>
@@ -55,22 +57,22 @@ const MovingUp = ({ windowDimension }) => {
           <div className="header-1">Features</div>
           <div className="indents">
             <div className="paragraph-1">
-              - 3 different world environments to explore, and 9 levels per world.
+              3 different world environments to explore, and 9 levels per world.
             </div>
             <div className="paragraph-1">
-              - Physics for gliding, dashing, and climbing passed obstacles.
+              Physics for gliding, dashing, and climbing passed obstacles.
             </div>
             <div className="paragraph-1">
-              - Various objects to interact with and collectables to discover.
+              Various objects to interact with and collectables to discover.
             </div>
           </div>
         </div>
         <div className="project-detail">
           <div className="header-1">Tech Stack</div>
           <div className="indents">
-            <div className="paragraph-1">- Unity 2D Game Engine.</div>
-            <div className="paragraph-1">- Photoshop, Procreate.</div>
-            <div className="paragraph-1">- C#.</div>
+            <div className="paragraph-1">Unity 2D Game Engine.</div>
+            <div className="paragraph-1">Photoshop, Procreate.</div>
+            <div className="paragraph-1">C#.</div>
           </div>
         </div>
       </div>

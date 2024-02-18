@@ -46,33 +46,22 @@ const TheMarbleGame = ({windowDimension}) => {
           </div>
         </div>
         <div className="project-detail">
-          <div className="header-1">Role</div>
-          <div className="indents">
-            <div className="subheader-1">Solo Endeavor</div>
-            <div className="indents">
-              <div className="paragraph-1">
-                Programming.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="project-detail">
           <div className="header-1">Features</div>
           <div className="indents">
-            <div className="paragraph-1">- Collision Detection: Ensures accurate interactions between objects within the game world.</div>
-            <div className="paragraph-1">- Scene Management: Facilitates the smooth transition and management of different game scenes or levels.</div>
-            <div className="paragraph-1">- Follow Camera: A camera system that dynamically follows the player's movements.</div>
-            <div className="paragraph-1">- Menu System: An intuitive interface for navigating through game options.</div>
-            <div className="paragraph-1">- Physics System: Simulates realistic physical interactions between game entities.</div>
-            <div className="paragraph-1">- Touch Controls: Responsive touch input for mobile platforms.</div>
-            <div className="paragraph-1">- Inventory System: Manages items and equipment within the game.</div>
+            <div className="paragraph-1"><b>Collision Detection: </b>Ensures accurate interactions between objects within the game world.</div>
+            <div className="paragraph-1"><b>Scene Management: </b>Facilitates the smooth transition and management of different game scenes or levels.</div>
+            <div className="paragraph-1"><b>Follow Camera: </b>A camera system that dynamically follows the player's movements.</div>
+            <div className="paragraph-1"><b>Menu System: </b>An intuitive interface for navigating through game options.</div>
+            <div className="paragraph-1"><b>Physics System: </b>Simulates realistic physical interactions between game entities.</div>
+            <div className="paragraph-1"><b>Touch Controls: </b>Responsive touch input for mobile platforms.</div>
+            <div className="paragraph-1"><b>Inventory System: </b>Manages items and equipment within the game.</div>
           </div>
         </div>
         <div className="project-detail">
           <div className="header-1">Tech Stack</div>
           <div className="indents">
-            <div className="paragraph-1">- Java.</div>
-            <div className="paragraph-1">- Andoid Studio.</div>
+            <div className="paragraph-1">Java.</div>
+            <div className="paragraph-1">Andoid Studio.</div>
           </div>
         </div>
       </div>
