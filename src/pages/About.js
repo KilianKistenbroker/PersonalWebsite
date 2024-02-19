@@ -8,14 +8,17 @@ const About = () => {
       <div className="project-flex">
         {/* Name */}
         <div className="header-1">Kilian Kistenbroker</div>
-        <div className="bullet-1">
+        <div className="indents" style={{lineHeight:"1.5rem"}}>
+          <div className="bullet-1"style={{marginTop:""}}>
           <b>Email: </b>
+          <br></br>
           <a className="link" href="mailto:kilian.kistenbroker@gmail.com.com">
             kilian.kistenbroker@gmail.com
           </a>
         </div>
-        <div className="bullet-1">
+        <div className="bullet-1"style={{marginTop:""}}>
           <b>LinkedIn: </b>
+          <br></br>
           <a
             className="link"
             href="https://www.linkedin.com/in/kilian-kistenbroker-558b072ab/"
@@ -24,8 +27,9 @@ const About = () => {
             linkedin.com/kilian-kistenbroker
           </a>
         </div>
-        <div className="bullet-1">
+        <div className="bullet-1"style={{marginTop:""}}>
           <b>Github: </b>
+          <br></br>
           <a
             className="link"
             href="https://github.com/KilianKistenbroker"
@@ -34,16 +38,21 @@ const About = () => {
             github.com/KilianKistenbroker
           </a>
         </div>
-        <div className="bullet-1">
-          <b>Repository: </b>
+
+        {/* this website's repo */}
+        <div className="bullet-1" style={{marginTop:" ", lineHeight:""}}>
+          <i>Visit this website's GitHub repository: </i>
+          <br></br>
           <a
             className="link"
             href="https://github.com/KilianKistenbroker/PersonalWebsite"
             target="_blank"
           >
-            personalWebsite
+            PersonalWebsite
           </a>
         </div>
+        </div>
+        
         {/* Experience */}
         <div className="header-1">Professional Summary</div>
         <div className="indents">

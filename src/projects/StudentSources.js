@@ -39,7 +39,7 @@ const StudentSources = ({ windowDimension }) => {
                 href="https://github.com/KilianKistenbroker/student-sources-prototype/tree/master"
                 target="_blank"
               >
-                beta-prototype
+                StudentSourcesPrototype
               </a>
             </div>
           </div>
