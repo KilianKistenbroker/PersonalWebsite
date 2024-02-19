@@ -9,6 +9,8 @@ body {
   user-select: none;
 }
 
+p {margin: 0;}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -72,7 +74,7 @@ code {
   margin: 0 auto; /* Center the grid horizontally */
 }
 
-.student-sources {
+/* .student-sources {
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem;
 }
@@ -80,7 +82,7 @@ code {
 .moving-up {
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem;
-}
+} */
 
 .button-header {
   background-color: #202020;
@@ -244,7 +246,8 @@ display: grid;
 }
 
 .project-details {
-  
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
 }
 
 .header-1 {

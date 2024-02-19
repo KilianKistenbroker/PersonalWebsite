@@ -18,7 +18,7 @@ const Navbar = ({ collapseAll }) => {
   }, [location.pathname]);
 
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       {/* projects */}
 
       <div className="navbar-grid">
@@ -46,7 +46,7 @@ const Navbar = ({ collapseAll }) => {
           About
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

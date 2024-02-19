@@ -10,11 +10,10 @@ function App() {
   const [selectedPage, setSelectedPage] = useState("Projects");
 
   const [isExpanded, setIsExpanded] = useState([false, false, false]);
-  
+
   const collapseAll = () => {
     setIsExpanded(isExpanded.map(() => false));
   };
-  
 
   // --------- listening for screen resizing here --------- //
 
@@ -43,11 +42,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar
-          // selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-          collapseAll={collapseAll}
-        />
+        <Navbar setSelectedPage={setSelectedPage} collapseAll={collapseAll} />
         <Routes>
           <Route
             path="/"
@@ -64,8 +59,8 @@ function App() {
       </Router>
 
       {/* footer */}
-      <div id="footer">
-        <div id="footer-content">
+      <footer id="footer">
+        <p id="footer-content">
           Copyright © 2024
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +84,8 @@ function App() {
             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
           </svg>
           All Rights Reserved
-        </div>
-      </div>
+        </p>
+      </footer>
     </div>
   );
 }

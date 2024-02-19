@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react";
 import StudentSources from "../projects/StudentSources";
 import MovingUp from "../projects/MovingUp";
 import TheMarbleGame from "../projects/TheMarbleGame";
 
-const Projects = ({
-  isExpanded,
-  setIsExpanded,
-  windowDimension,
-}) => {
-
+const Projects = ({ isExpanded, setIsExpanded, windowDimension }) => {
   const componentsList = [
-    [<StudentSources windowDimension={windowDimension}/>, "File Management Website"],
-    [<MovingUp windowDimension={windowDimension}/>, "Mobile Platformer Game"],
-    [<TheMarbleGame windowDimension={windowDimension}/>, "2D Game Engine"]
+    [
+      <StudentSources windowDimension={windowDimension} />,
+      "File Management Website",
+    ],
+    [<MovingUp windowDimension={windowDimension} />, "Mobile Platformer Game"],
+    [<TheMarbleGame windowDimension={windowDimension} />, "2D Game Engine"],
   ];
 
   return (
@@ -20,8 +18,8 @@ const Projects = ({
       <div className="project-flex">
         {componentsList.map((component, index) => {
           return (
-            <div key={index} className={"moving-up"}>
-              <div
+            <div key={index} className={"project-details"}>
+              <header
                 className="button-header"
                 onClick={() => {
                   const newExpandedState = [...isExpanded];
@@ -56,13 +54,10 @@ const Projects = ({
                     </svg>
                   )}
                 </div>
-                
-                <div style={{marginLeft:"1rem"}}>
-                  {component[1]}
-                </div>
-                
-              </div>
-              <div
+
+                <p style={{ marginLeft: "1rem" }}>{component[1]}</p>
+              </header>
+              <article
                 className={
                   isExpanded[index]
                     ? "project-content expanded"
@@ -70,7 +65,7 @@ const Projects = ({
                 }
               >
                 {component[0]}
-              </div>
+              </article>
             </div>
           );
         })}
