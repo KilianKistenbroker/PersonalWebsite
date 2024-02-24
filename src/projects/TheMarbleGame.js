@@ -29,19 +29,20 @@ const TheMarbleGame = ({ windowDimension }) => {
         <header className="header-1">Overview</header>
         <section className="indents">
           <p className="paragraph-1">
-            <b>The Marble Game </b> is a primitive version of the{" "}
-            <b>Mobile Platformer Game</b> featuring its own 2d game engine, and
-            was developed as a personal project during my first year at
-            university for android devices. The primary goal behind this
-            endeavor was to deepen my understanding of programming concepts
-            through the lens of game development, and therefore lacks a thorough
-            development cycle. As of now, I do not have plans to continue
-            developing this project in the near future. It remains a valuable
-            learning experience and a snapshot of my early programming journey.
-            Although the engine I wrote is very specific to my game, the code
-            within the repository is available for anyone who finds it useful
-            for their own projects, learning, or inspiration. Feel free to
-            explore, modify, and incorporate any part of it into your work.
+            This project is a primitive version of the
+            <b> Mobile Platformer Game</b> and features its own 2d game engine
+            that I programmed in Java using Android Studio, which was developed
+            as a personal project during my first year at university for android
+            devices. The primary goal behind this endeavor was to deepen my
+            understanding of programming concepts through the lens of game
+            development, and therefore lacks a thorough development cycle. As of
+            now, I do not have plans to continue developing this project in the
+            near future. It remains a valuable learning experience and a
+            snapshot of my early programming journey. Although the engine I
+            wrote is very specific to my game, the code within the repository is
+            available for anyone who finds it useful for their own projects,
+            learning, or inspiration. Feel free to explore, modify, and
+            incorporate any part of it into your work.
           </p>
         </section>
         <header className="header-1">Features</header>

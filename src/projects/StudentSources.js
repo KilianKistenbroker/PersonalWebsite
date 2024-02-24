@@ -75,7 +75,7 @@ const StudentSources = ({ windowDimension }) => {
         <header className="header-1">Features</header>
         <section className="indents">
           <p className="paragraph-1">
-            Support for jpg, png, gif, pdf, txt, mp3, mp4, and mov files.
+            Support for JPG, PNG, GIF, PDF, TXT, MP3, MP4, and MOV files.
           </p>
           <p className="paragraph-1">
             View and comment on other users public files.

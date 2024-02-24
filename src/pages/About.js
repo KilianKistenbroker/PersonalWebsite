@@ -1,4 +1,4 @@
-import selfie from "../selfies/headshot3.png";
+import selfie from "../selfies/headshot 5.1.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -83,28 +83,19 @@ const About = () => {
         <section className="indents">
           <p className="paragraph-1">
             I am from the Bay Area in Northern California, and I am quite
-            passionate about video game and front-end development. These
-            subjects interest me because they offer a blend of creativity and
-            technicality in development. I have always been a creative person
-            and excelled in my technical school courses, particularly in
-            subjects like math and physics.
+            passionate about video game and full-stack development. These
+            subjects interest me because they offer a nice blend of creativity
+            and technicality in developing software projects. I have always been
+            a creative and technical person, excelling in both subjects relating
+            to art and math.
           </p>
           <p className="paragraph-1">
-            In high school, I wrote a 90,000-word fiction book in my free time,
-            and self-published it through one of Amazon's services shortly after
-            graduating. After high school, I joined the United States Air Force
-            and served for four years as an Aircraft Maintenance Technician for
-            two airframes and earned two medals for my accomplishments.
-            Currently, I have been honorably discharged from the Air Force and
-            am transitioning into a software position with a keen interest in
-            starting a small business in game development.
+            Currently, I am honorably discharged from the Air Force and am
+            transitioning into a software position with a keen interest in
+            starting a small business in game development. In my free time, I am
+            usually playing a video game or trying to develop one.
           </p>
-          <p className="paragraph-1">
-            In my free time, I am usually playing a video game or trying to
-            develop one. If I ever get the resources to do so, I will probably
-            adapt that book I mentioned earlier into a video game to justify all
-            the time I spent writing it.
-          </p>
+          <p className="paragraph-1">Thank you for visiting my website!</p>
 
           <div className="img-container">
             <LazyLoadImage className="img" src={selfie} alt="" />
