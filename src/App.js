@@ -15,6 +15,10 @@ function App() {
     setIsExpanded(isExpanded.map(() => false));
   };
 
+  const getYear = () => {
+    return new Date().getFullYear().toString();
+  };
+
   // --------- listening for screen resizing here --------- //
 
   const [windowDimension, setWindowDimension] = useState({
@@ -61,7 +65,7 @@ function App() {
       {/* footer */}
       <footer id="footer">
         <p id="footer-content">
-          Copyright © 2024
+          Copyright © {getYear()}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

@@ -95,7 +95,9 @@ const About = () => {
             starting a small business in game development. In my free time, I am
             usually playing a video game or trying to develop one.
           </p>
-          <p className="paragraph-1">Thank you for visiting my website!</p>
+          <p className="paragraph-1">
+            Thank you for visiting my portfolio website!
+          </p>
 
           <div className="img-container">
             <LazyLoadImage className="img" src={selfie} alt="" />
