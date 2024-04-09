@@ -3,59 +3,66 @@
     "moving_up_photos": [
         {
             "id": 1,
-            "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_title_scene.jpg",
+            "fullPath": "w1mx0a4hrdA",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/level_1_early_gameplay_mini_2.png",
+            "title": "Level 1 Early Gameplay",
+            "type" : "video"
+        },
+        {
+            "id": 2,
+            "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_title_scene.png",
             "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_title_scene_mini.png",
             "title": "Title Scene (WIP)",
             "type" : "photo"
         },
         {
-            "id": 2,
+            "id": 3,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_home_scene.png",
             "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_home_scene_mini.png",
             "title": "Home Scene (WIP)",
             "type" : "photo"
         },
         {
-            "id": 3,
+            "id": 4,
             "fullPath": "/photoLibrary/movingUpPhotos/fullPhotos/moving_up_level_1.png",
             "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/moving_up_level_1_mini.png",
             "title": "Level 1 (WIP)",
             "type" : "photo"
         }
-        ,
-        {
-            "id": 4,
-            "fullPath": "XH7WZhpzQvU",
-            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/level_1_early_gameplay_mini.png",
-            "title": "Level 1 Early Gameplay",
-            "type" : "video"
-        }
     ],
 
     "student_sources_photos": [
+        
         {
             "id": 1,
+            "fullPath": "zhA4XPcumic",
+            "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/filesystem_website_demo_mini_2.png",
+            "title": "filesystem website demo",
+            "type" : "video"
+        },
+        {
+            "id": 2,
             "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/landing_page.png",
             "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/landing_page_mini.png",
             "title": "Landing Page",
             "type" : "photo"
         },
         {
-            "id": 2,
+            "id": 3,
             "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/sign_up_page.png",
             "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/sign_up_page_mini.png",
             "title": "Sign Up Page",
             "type" : "photo"
         },
         {
-            "id": 3,
+            "id": 4,
             "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/home_page.png",
             "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/home_page_mini.png",
             "title": "Home Page",
             "type" : "photo"
         },
         {
-            "id": 4,
+            "id": 5,
             "fullPath": "/photoLibrary/studentSourcesPhotos/fullPhotos/home_page_early_mockup.png",
             "miniPath": "/photoLibrary/studentSourcesPhotos/miniPhotos/home_page_early_mockup_mini.png",
             "title": "Home Page Mockup",

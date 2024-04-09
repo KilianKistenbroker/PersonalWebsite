@@ -16,7 +16,7 @@ const StudentSources = ({ windowDimension }) => {
       <div className="project-details-grid">
         {/* <div className="project-detail"> */}
         <header className="header-1">Links</header>
-        <section className="indents">
+        {/* <section className="indents">
           <p className="subheader-1">
             <b>Demo Website: </b>
             <a
@@ -27,7 +27,7 @@ const StudentSources = ({ windowDimension }) => {
               StudentSources.com
             </a>
           </p>
-        </section>
+        </section> */}
 
         <section className="indents">
           <p className="subheader-1">
@@ -45,6 +45,14 @@ const StudentSources = ({ windowDimension }) => {
         {/* <div className="project-detail"> */}
         <header className="header-1">Overview</header>
         <section className="indents">
+          <p className="subheader-1">
+            Project Duration:
+            <span className="paragraph-1" style={{ fontWeight: "normal" }}>
+              {" "}
+              February 2023 – May 2023
+            </span>
+          </p>
+
           <p className="paragraph-1">
             <b>Student Sources </b> is a college project I developed alongside a
             team for my Software Engineering capstone course. The purpose of

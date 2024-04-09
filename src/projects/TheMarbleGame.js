@@ -28,6 +28,13 @@ const TheMarbleGame = ({ windowDimension }) => {
         </section>
         <header className="header-1">Overview</header>
         <section className="indents">
+          <p className="subheader-1">
+            Project Duration:
+            <span className="paragraph-1" style={{ fontWeight: "normal" }}>
+              {" "}
+              June 2020 – July 2020
+            </span>
+          </p>
           <p className="paragraph-1">
             This project is a primitive version of the
             <b> Mobile Platformer Game</b> and features its own 2d game engine

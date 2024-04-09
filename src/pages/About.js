@@ -65,7 +65,9 @@ const About = () => {
           </p>
           <p className="subheader-1">Experience in: </p>
           <div className="indents">
-            <p className="bullet-1">Java, JavaScript, C#, CSS, HTML.</p>
+            <p className="bullet-1">
+              Java, JavaScript, TypeScript, C#, CSS, HTML.
+            </p>
             <p className="bullet-1">Spring Boot, React.</p>
             <p className="bullet-1">SQL, MySQL Workbench.</p>
             <p className="bullet-1">Amazon Web Services.</p>
@@ -73,7 +75,7 @@ const About = () => {
           </div>
           <p className="subheader-1">Some experience in: </p>
           <div className="indents">
-            <p className="bullet-1">C, C++, TypeScript, Python.</p>
+            <p className="bullet-1">C, C++, Python.</p>
             <p className="bullet-1">Express.</p>
             <p className="bullet-1">MongoDB.</p>
           </div>

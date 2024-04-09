@@ -5,11 +5,11 @@ import TheMarbleGame from "../projects/TheMarbleGame";
 
 const Projects = ({ isExpanded, setIsExpanded, windowDimension }) => {
   const componentsList = [
+    [<MovingUp windowDimension={windowDimension} />, "Mobile Platformer Game"],
     [
       <StudentSources windowDimension={windowDimension} />,
       "File Management Website",
     ],
-    [<MovingUp windowDimension={windowDimension} />, "Mobile Platformer Game"],
     [<TheMarbleGame windowDimension={windowDimension} />, "2D Game Engine"],
   ];
 

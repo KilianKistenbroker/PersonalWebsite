@@ -14,6 +14,13 @@ const MovingUp = ({ windowDimension }) => {
       <div className="project-details-grid">
         <header className="header-1">Overview</header>
         <section className="indents">
+          <p className="subheader-1">
+            Project Duration:
+            <span className="paragraph-1" style={{ fontWeight: "normal" }}>
+              {" "}
+              December 2023 – Present
+            </span>
+          </p>
           <p className="paragraph-1">
             <b>Moving Up</b> is a work-in-progress mobile game project that I am
             solo developing with Unity's 2D game engine. This game is a homage
