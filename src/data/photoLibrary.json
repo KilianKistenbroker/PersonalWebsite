@@ -3,6 +3,13 @@
     "moving_up_photos": [
         {
             "id": 1,
+            "fullPath": "_66DjQxfcoY",
+            "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/april_update_mini.png",
+            "title": "April Update",
+            "type" : "video"
+        },
+        {
+            "id": 2,
             "fullPath": "w1mx0a4hrdA",
             "miniPath": "/photoLibrary/movingUpPhotos/miniPhotos/level_1_early_gameplay_mini_2.png",
             "title": "Level 1 Early Gameplay",
